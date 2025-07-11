@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sovereign Style | Watches & Sunglasses</title>
+  <style>
+    /* Basic resets */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #fff; color: #111; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header & Nav */
+    header {
+      background: url('https://images.unsplash.com/photo-1553302304-0144c7944dc4?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute; left: 0; right: 0; bottom: 0; top: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 { font-size: 3.5em; letter-spacing: 4px; margin-bottom: 10px; }
+    header p { font-size: 1.4em; font-style: italic; }
+
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #f0c040; }
+
+    /* Product Grid */
+    .product-section {
+      padding: 60px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .product {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: #fefefe;
+    }
+    .product:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+    .product-details {
+      padding: 20px;
+      text-align: center;
+    }
+    .product-details h3 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+    .product-details p {
+      margin-bottom: 15px;
+      color: #888;
+    }
+    .product-details .btn {
+      background: #111;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 0.95em;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .product-details .btn:hover {
+      background: #333;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SOVEREIGN STYLE</h1>
+    <p>Curated Luxury in Watches & Sunglasses</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#watches">Watches</a>
+    <a href="#sunglasses">Sunglasses</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="product-section" id="watches">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Luxury Watch">
+      <div class="product-details">
+        <h3>Elegant Chronograph</h3>
+        <p>$199.99</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Leather Watch">
+      <div class="product-details">
+        <h3>Leather-Strap Classic</h3>
+        <p>$149.99</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-section" id="sunglasses">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1585386959984-a41552263f4b?auto=format&fit=crop&w=600&q=80" alt="Aviator Sunglasses">
+      <div class="product-details">
+        <h3>Polarized Aviators</h3>
+        <p>$89.99</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1586034679980-ea6feef01f6b?auto=format&fit=crop&w=600&q=80" alt="Stylish Round Shades">
+      <div class="product-details">
+        <h3>Retro Round Shades</h3>
+        <p>$79.99</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us: <a href="mailto:info@sovereignstyle.com" style="color:#f0c040;">info@sovereignstyle.com</a></p>
+    <p>© 2025 Sovereign Style. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
