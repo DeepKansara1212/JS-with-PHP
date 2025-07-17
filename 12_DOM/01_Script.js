@@ -17,7 +17,6 @@ googleLink.setAttribute('href', 'https://google.com')
 // console.log(googleAtr);
 
 
-
 document.querySelector('#p1') 
 
 
